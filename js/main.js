@@ -39,6 +39,7 @@ $(document).ready(function() {
         
         else {
                 $('head').append('<link href="../css/main.css" type="text/css" rel="stylesheet"/>')
+                $('#message').css('height', String($('#email').height()*2+34)+'px');
                 
                 if ($('body').width() < 637) {
                         $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
