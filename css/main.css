@@ -2,12 +2,16 @@
 ::-moz-selection {background-color: rgba(107,87,67,0.5); color: #191919;}
 
 @font-face {
-	font-family: Fanwood;
-	src: url(../fonts/Fanwood.otf),
-		 url(../fonts/Fanwood.tff),
-		 url(../fonts/Fanwood.eot);
-}
+    font-family: 'fanwoodregular';
+    src: url('../fonts/Fanwood-webfont.eot');
+    src: url('../fonts/Fanwood-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Fanwood-webfont.woff') format('woff'),
+         url('../fonts/Fanwood-webfont.ttf') format('truetype'),
+         url('../fonts/Fanwood-webfont.svg#fanwoodregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 * {position: relative;}
 a:hover {color: #998877;}
 a:active {color: #887766;}
