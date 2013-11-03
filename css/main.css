@@ -1,15 +1,8 @@
-::selection {
-    background-color: #eeabfa;
-    color: #554433;
-    
-}
-::-moz-selection {
-    background-color: #eeabfa;
-    color: #554433;
-}
+::selection {background-color: rgba(107,87,67,0.5); color: #191919;}
+::-moz-selection {background-color: rgba(107,87,67,0.5); color: #191919;}
 
 @font-face {
-	font-family: "Fanwood";
+	font-family: Fanwood;
 	src: url(../fonts/Fanwood.otf),
 		 url(../fonts/Fanwoodi.otf),
 		 url(../fonts/Fanwood.tff),
@@ -25,7 +18,7 @@ a:visited {color: #e5e5e5;}
 a:visited:hover {color: #887766;}
 html {
     background-color: #6b5743;
-    font-family: "Fanwood"; /* WE NEED TO LOAD THIS FONT, @FONTFACE */
+    font-family: Fanwood;
     color: #202020;
     min-height: 610px;
 }
@@ -91,7 +84,6 @@ nav {
 .textured {
 	background-image: url('../img/repeat.png');
 	background-repeat: repeat;
-	border:1px solid rgba(0,0,0,0.2);
 }
 	article {
 	    margin-left: auto;
