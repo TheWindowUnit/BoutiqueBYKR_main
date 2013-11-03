@@ -4,11 +4,8 @@
 @font-face {
 	font-family: Fanwood;
 	src: url(../fonts/Fanwood.otf),
-		 url(../fonts/Fanwoodi.otf),
 		 url(../fonts/Fanwood.tff),
-		 url(../fonts/Fanwoodi.tff),
-		 url(../fonts/Fanwood.eot),
-		 url(../fonts/Fanwoodi.eot);
+		 url(../fonts/Fanwood.eot);
 }
 
 * {position: relative;}
@@ -18,7 +15,7 @@ a:visited {color: #e5e5e5;}
 a:visited:hover {color: #887766;}
 html {
     background-color: #6b5743;
-    font-family: Fanwood;
+    font-family: Fanwood, serif;
     color: #202020;
     min-height: 610px;
 }
