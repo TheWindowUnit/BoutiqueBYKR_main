@@ -3,15 +3,15 @@
 
 @font-face {
     font-family: 'fanwoodregular';
-    src: url('../fonts/Fanwood-webfont.eot');
-    src: url('../fonts/Fanwood-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Fanwood-webfont.woff') format('woff'),
-         url('../fonts/Fanwood-webfont.ttf') format('truetype'),
-         url('../fonts/Fanwood-webfont.svg#fanwoodregular') format('svg');
+    src: url('Fanwood-webfont.eot');
+    src: url('Fanwood-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fanwood-webfont.woff') format('woff'),
+         url('Fanwood-webfont.ttf') format('truetype'),
+         url('Fanwood-webfont.svg#fanwoodregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 * {position: relative;}
 a:hover {color: #998877;}
 a:active {color: #887766;}
@@ -19,7 +19,7 @@ a:visited {color: #e5e5e5;}
 a:visited:hover {color: #887766;}
 html {
     background-color: #6b5743;
-    font-family: Fanwood, serif;
+    font-family: 'fandwoodregular', serif;
     color: #202020;
     min-height: 610px;
 }
