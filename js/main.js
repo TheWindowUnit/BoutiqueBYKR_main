@@ -75,7 +75,6 @@ $(document).ready(function() {
                 //If window is resized
                 $(window).resize(function() {
                         
-                        $('.wrapper').css('min-height', String(Math.round($('.header').height()+$('nav').height()+$('.content').height()+$('.information').height()+$('.footer').height()+100))+'px');
                         $('.information').css('clear', 'both');
                         if ($('body').width() < 637) {
                                 $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
