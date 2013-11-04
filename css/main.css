@@ -1,5 +1,5 @@
-::selection {background-color: rgba(107,87,67,0.5); color: #191919;}
-::-moz-selection {background-color: rgba(107,87,67,0.5); color: #191919;}
+::selection {background-color: rgba(107,87,67,0.2); color: #191919;}
+::-moz-selection {background-color: rgba(107,87,67,0.2); color: #191919;}
 
 @font-face {
     font-family: 'fanwoodregular';
@@ -85,6 +85,7 @@ nav {
 .textured {
 	background-image: url('../img/repeat.png');
 	background-repeat: repeat;
+	background-color: #EEEFF0;
 }
 	article {
 	    margin-left: auto;
