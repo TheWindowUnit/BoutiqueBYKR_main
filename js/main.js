@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
         //On Page Load
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        //if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                 $('head').append('<link href="../css/main_mobile.css" type="text/css" rel="stylesheet"/>');
                 var i = 0;
                 var ratio = 2.625;
@@ -35,84 +35,84 @@ $(document).ready(function() {
                                 clearInterval(m);
                         }
                 });
-        }
-        
-        else {
-                $('head').append('<link href="../css/main.css" type="text/css" rel="stylesheet"/>')
-                $('#message').css('height', String($('#email').height()*2+34)+'px');
-                
-                if ($('body').width() < 637) {
-                        $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
-                        $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
-                                
-                        if ($('html').height() < 611) {
-                                $('.wrapper').css('height', '');
-                                $('.formalities').css('position', 'absolute');
-                        }
-                }
-                
-                else {
-                        $('.wrapper').css('width', '80%').css('height', '').css('margin-top','4%');
-                }
-                
-                var i = 0;
-                var ratio = 2.625;
-                var height = String(Math.round($('.content').width()/ratio))+'px';
-                var m = setInterval(function() {
-                        if (i < 2) {
-                                /*height = String(Math.round($('.content').width()/ratio))+'px';
-                                $('.content').css('height', height);*/
-                                $('.wrapper').css('width', $('wrapper').width());
-                                
-                                i++;
-                        }
-                        else {
-                                clearInterval(m);
-                        }
-                }, 25)
-                
-                
-                //If window is resized
-                $(window).resize(function() {
-                        
-                        $('.information').css('clear', 'both');
-                        if ($('body').width() < 637) {
-                                $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
-                                $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
-                                
-                                if ($('html').height() < 611) {
-                                        $('.wrapper').css('height', '');
-                                        $('.formalities').css('position', 'absolute');
-                                }
-                                else {
-                                        $('.formalities').css('position', 'fixed');
-                                }
-                                
-                                if ($(window).width() < 471) {
-                                        $('.formalities').css('position', 'absolute');
-                                }
-                        }
-                        
-                        //else if ($('body').width() > 1607) {
-                        //        $('.header').css('float', 'left').css('margin-top', '20px').css('margin-left', '5%');
-                        //        $('.content').css('float', 'left').css('margin-left', '5%').css('clear', 'left');
-                        //        $('.information').css('max-width', '40%').css('float', 'right').css('margin-right', '5%').css('clear', '').css('margin-top', '-200px');
-                        //        $('.footer').css('clear', 'both');
-                        //        $('.wrapper').css('padding-top', '10px').css('min-height', String(Math.round($('.content').height()+$('.header').height()+$('.footer').height()+60))+'px');
-                        //}
-                        
-                        else {
-                                $('.wrapper').css('width', '80%').css('height', '').css('margin-top', '4%');
-                                $('nav').css('position', '').css('top', '').css('width','')
-                                $('.formalities').css('position', 'fixed');
-                                $('.header').css('float', '').css('margin-top', '').css('margin-left', '');
-                                $('.content').css('float', '').css('margin-left', '');
-                                $('.information').css('clear', 'both').css('margin-top', '').css('max-width', '630px').css('float', '').css('margin-right', 'auto');
-                        }
-                        
-                        height = String(Math.round($('.content').width()/ratio))+'px';
-                        //$('.content').css('height', height);
-                        console.log(height);
-                });
-        }
+        //}
+        //
+        //else {
+        //        $('head').append('<link href="../css/main.css" type="text/css" rel="stylesheet"/>')
+        //        $('#message').css('height', String($('#email').height()*2+34)+'px');
+        //        
+        //        if ($('body').width() < 637) {
+        //                $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
+        //                $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
+        //                        
+        //                if ($('html').height() < 611) {
+        //                        $('.wrapper').css('height', '');
+        //                        $('.formalities').css('position', 'absolute');
+        //                }
+        //        }
+        //        
+        //        else {
+        //                $('.wrapper').css('width', '80%').css('height', '').css('margin-top','4%');
+        //        }
+        //        
+        //        var i = 0;
+        //        var ratio = 2.625;
+        //        var height = String(Math.round($('.content').width()/ratio))+'px';
+        //        var m = setInterval(function() {
+        //                if (i < 2) {
+        //                        /*height = String(Math.round($('.content').width()/ratio))+'px';
+        //                        $('.content').css('height', height);*/
+        //                        $('.wrapper').css('width', $('wrapper').width());
+        //                        
+        //                        i++;
+        //                }
+        //                else {
+        //                        clearInterval(m);
+        //                }
+        //        }, 25)
+        //        
+        //        
+        //        //If window is resized
+        //        $(window).resize(function() {
+        //                
+        //                $('.information').css('clear', 'both');
+        //                if ($('body').width() < 637) {
+        //                        $('.wrapper').css('width', '100%').css('margin-top', String($('nav').height())+'px').css('margin-bottom', '30px');
+        //                        $('nav').css('position', 'fixed').css('top', '0px').css('z-index', '5').css('width', String($('body').width())+'px');
+        //                        
+        //                        if ($('html').height() < 611) {
+        //                                $('.wrapper').css('height', '');
+        //                                $('.formalities').css('position', 'absolute');
+        //                        }
+        //                        else {
+        //                                $('.formalities').css('position', 'fixed');
+        //                        }
+        //                        
+        //                        if ($(window).width() < 471) {
+        //                                $('.formalities').css('position', 'absolute');
+        //                        }
+        //                }
+        //                
+        //                //else if ($('body').width() > 1607) {
+        //                //        $('.header').css('float', 'left').css('margin-top', '20px').css('margin-left', '5%');
+        //                //        $('.content').css('float', 'left').css('margin-left', '5%').css('clear', 'left');
+        //                //        $('.information').css('max-width', '40%').css('float', 'right').css('margin-right', '5%').css('clear', '').css('margin-top', '-200px');
+        //                //        $('.footer').css('clear', 'both');
+        //                //        $('.wrapper').css('padding-top', '10px').css('min-height', String(Math.round($('.content').height()+$('.header').height()+$('.footer').height()+60))+'px');
+        //                //}
+        //                
+        //                else {
+        //                        $('.wrapper').css('width', '80%').css('height', '').css('margin-top', '4%');
+        //                        $('nav').css('position', '').css('top', '').css('width','')
+        //                        $('.formalities').css('position', 'fixed');
+        //                        $('.header').css('float', '').css('margin-top', '').css('margin-left', '');
+        //                        $('.content').css('float', '').css('margin-left', '');
+        //                        $('.information').css('clear', 'both').css('margin-top', '').css('max-width', '630px').css('float', '').css('margin-right', 'auto');
+        //                }
+        //                
+        //                height = String(Math.round($('.content').width()/ratio))+'px';
+        //                //$('.content').css('height', height);
+        //                console.log(height);
+        //        });
+        //}
 });
