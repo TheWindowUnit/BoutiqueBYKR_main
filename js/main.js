@@ -7,6 +7,7 @@ $(document).ready(function() {
                 var ratio = 2.625;
                 var height = String(Math.round($('.content').width()/ratio))+'px';
                 var logofs = String(Math.round($(window).width()/3.11))+'px';
+                var opfdefaultfs = String(Math.round(1.5*$(window).width()/31.1))+'px';
                 var defaultfs = String(Math.round($(window).width()/31.1))+'px';
                 var hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
                 var qdefaultfs = String(Math.round($(window).width()/124.4))+'px';
@@ -16,6 +17,7 @@ $(document).ready(function() {
                         if (i < 2) {
                                 height = String(Math.round($('.content').width()/ratio))+'px';
                                 logofs = String(Math.round($(window).width()/3.11))+'px';
+                                opfdefaultfs = String(Math.round(1.5*$(window).width()/31.1))+'px';
                                 defaultfs = String(Math.round($(window).width()/31.1))+'px';
                                 tfdefaultfs = String(Math.round($(window).width()/31.1*3/4))+'px';
                                 hdefaultfs = String(Math.round($(window).width()/62.2))+'px';
@@ -24,7 +26,7 @@ $(document).ready(function() {
                                 $('.content').css('height', 'auto').css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
                                 $('.logo').css('font-size', logofs);
                                 $('html').css('font-size', defaultfs);
-                                $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000').css('margin-bottom', defaultfs);
+                                $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000').css('margin-bottom', opfdefaultfs);
                                 $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
                                 $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
                                 $('body').css('padding-bottom', hdefaultfs);
