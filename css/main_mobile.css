@@ -80,7 +80,9 @@ nav {
 	     -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
 	        transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
-
+.content {
+	max-width: none;
+}
 .textured {
 	background-image: url('../img/repeat.png');
 	background-repeat: repeat;
@@ -98,6 +100,7 @@ nav {
 	.information {
 	    margin-left: auto;
 	    margin-right: auto;
+	    max-width: none;
 	    width: 95%;
 	    background-image: url('../img/repeat.png');
 		background-repeat: repeat;
