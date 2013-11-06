@@ -24,7 +24,7 @@ $(document).ready(function() {
                                 $('.content').css('height', 'auto').css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
                                 $('.logo').css('font-size', logofs);
                                 $('html').css('font-size', defaultfs);
-                                $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000');
+                                $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000').css('margin-bottom', defaultfs);
                                 $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
                                 $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
                                 $('body').css('padding-bottom', hdefaultfs);
