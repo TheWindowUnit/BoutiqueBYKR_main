@@ -31,7 +31,7 @@ body {
 }
 
 .wrapper {
-    width: 80%;
+    width: 95%;
     height: 100%;
     min-width: 470px;
     max-width: 900px;
@@ -91,8 +91,7 @@ nav {
 	    margin-left: auto;
 	    margin-right: auto;
 	    margin-top: 0px;
-	    width: 90%;
-	    max-width: 630px;
+	    width: 95%;
 	    height:auto;
 	    background-image: url('../img/repeat.png');
 		background-repeat: repeat;
@@ -100,8 +99,7 @@ nav {
 	.information {
 	    margin-left: auto;
 	    margin-right: auto;
-	    width: 90%;
-	    max-width: 630px;
+	    width: 95%;
 	    background-image: url('../img/repeat.png');
 		background-repeat: repeat;
 	}

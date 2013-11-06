@@ -23,7 +23,7 @@ $(document).ready(function() {
                                 tdefaultfs = String(Math.ceil($(window).width()/622))+'px';
                                 $('.content').css('height', 'auto').css('border-bottom-width', tdefaultfs).css('border-top-width', tdefaultfs);
                                 $('.logo').css('font-size', logofs);
-                                $('html').css('font-size', tfdefaultfs);
+                                $('html').css('font-size', defaultfs);
                                 $('.wrapper').css('box-shadow', '0px 0px '+hdefaultfs+' #000000');
                                 $('nav').css('margin-bottom', defaultfs).css('margin-top', hdefaultfs);
                                 $('.navlink').css('margin-left', qdefaultfs).css('margin-right', qdefaultfs);
